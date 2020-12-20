@@ -1,13 +1,19 @@
 import React from 'react';
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
-// import { Container } from './styles';
+import Clickables from '../../components/Clickables';
+import { Container, Main } from './styles';
 
 function Home() {
   let {username} = useParams();
 
   return (
-    <h1>Look here - {username}</h1>
+    <Container>
+      <Main>
+        <Clickables />
+        <div className="img-shadow"></div>
+      </Main>
+    </Container>
   );
 }
 

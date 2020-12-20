@@ -37,53 +37,6 @@ export const Main = styled.div`
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 80px rgba(0,0,0) inset;
   }
-
-  .icons {
-    position: absolute;
-    right: 200px;
-
-    display: flex;
-
-    color: #eee;
-    cursor: pointer;
-    user-select: none;
-
-    & :last-child:hover {
-      border-top-right-radius: 8px;
-      background-color: rgba(230, 0, 0, 0.7);
-    }
-
-    span {
-      box-sizing: unset;
-      width: 25px;
-      height: 17px;
-      
-      background: transparent;
-      padding: 10px;
-      text-align: center;
-      font-weight: 500;
-
-      &:hover {
-        background: rgba(200,200,200,0.3);
-      }
-    }
-  }
-
-  .config {
-    i {
-      position: absolute;
-      bottom: 86px;
-      right: 240px;
-
-      color: #eee;
-      background-color: rgba(256,256,256,0.3);
-      border-radius: 3px;
-      padding: 10px;
-
-      font-size: 18px;
-      cursor: pointer;
-    }
-  }
 `;
 
 export const Form = styled.div`
@@ -120,7 +73,8 @@ export const Form = styled.div`
       opacity: 0.5;
 
       &:hover ~ div  {
-        display: block;
+        transform: scale(1);
+        transition: ease 0.2s;
       }
     }
 
@@ -129,7 +83,7 @@ export const Form = styled.div`
       left: 518px;
       top: 93px;
 
-      display: none;
+      transform: scale(0);
       background-color: #fbfbfb;
       width: 320px;
       height: 175px;

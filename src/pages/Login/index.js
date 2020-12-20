@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 import icon from '../../assets/vlr-logo-black.svg';
 import grayArrow from '../../assets/gray-arrow.svg';
 import whiteArrow from '../../assets/white-arrow.svg';
-import { Link } from 'react-router-dom';
 
 import { Container, Main, Form } from './styles';
 
-function Login() {
+import Clickables from '../../components/Clickables';
+import DesktopIcon from '../../components/DesktopIcon';
+
+function Login(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,10 +22,20 @@ function Login() {
     }
   }
 
+  function handleLogin(e) {
+    if (username && password) {
+      props.history.push(`/home/${username}`);
+    } else {
+      e.preventDefault();
+    }
+  }
+
   return (
     <Container>
+      <DesktopIcon />
+
       <Main>
-        <Form>
+        <Form onSubmit={handleLogin}>
           <header>
             <img src={icon} alt="Valorant Icon" />
             <i className="fas fa-question-circle"></i>
@@ -46,8 +58,7 @@ function Login() {
 
               <div>
                 <input type="password" id="password" className="input-box" required 
-                  onChange={handleInput} autoComplete="off" readonly 
-                  onfocus="this.removeAttribute('readonly');" 
+                  onChange={handleInput} autoComplete="off"
                 />
                 <label htmlFor="password" className="input-text">PASSWORD</label>
               </div>
@@ -57,8 +68,8 @@ function Login() {
                 <label htmlFor="checked"><div></div>Stay logged in</label>
               </div>
               
-              {username != '' && password != '' ? 
-                <button><Link to={`/home/${username}`}><img src={whiteArrow} alt="White Arrow" /></Link></button>
+              {username !== '' && password !== '' ? 
+                <button type="submit"><img src={whiteArrow} alt="White Arrow" /></button>
                 : 
                 <button disabled><img src={grayArrow} alt="Gray Arrow" /></button> 
               }
@@ -76,14 +87,7 @@ function Login() {
         </Form>
 
         <div className="img-shadow"></div>
-        <div className="icons">
-          <span>-</span>
-          <span>?</span>
-          <span>X</span>
-        </div>
-        <div className="config">
-          <i class="fas fa-cog"></i>
-        </div>
+        <Clickables />
       </Main>
     </Container>
   );
