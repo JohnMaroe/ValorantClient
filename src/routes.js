@@ -8,8 +8,8 @@ import Home from './pages/Home';
 export default function Routes() {
   return (
     <BrowserRouter>
-      <Route path="/" exact component={Login} />
-      <Route path="/home/:username" component={Home} />
+      <Route path="/ValorantClient" exact component={Login} />
+      <Route path="/ValorantClient/home/:username" component={Home} />
     </BrowserRouter>
   );
 };

@@ -29,7 +29,7 @@ function Home() {
           </header>
           
           <main>
-            <h1><a href="https://playvalorant.com/en-gb/" target="_blank">PLAY<i class="fas fa-play-circle"></i></a></h1>
+            <h1><a href="https://playvalorant.com/en-gb/" target="_blank" rel="noreferrer">PLAY<i class="fas fa-play-circle"></i></a></h1>
           </main>
 
           <footer>
