@@ -87,7 +87,9 @@ function Login(props) {
         </Form>
 
         <div className="img-shadow"></div>
+
         <Clickables />
+        
       </Main>
     </Container>
   );

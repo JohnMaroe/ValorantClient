@@ -24,7 +24,7 @@ export const Main = styled.div`
   justify-content: flex-start;
 
   background: url(${img}) center no-repeat;
-  background-size: cover;
+  background-size: 99.7% 100%;
   border-radius: 8px;
   box-shadow: inset 100px 0 100px 20px rgba(0,0,0);
   box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
@@ -35,7 +35,7 @@ export const Main = styled.div`
     pointer-events: none;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 0 0 80px rgba(0,0,0) inset;
+    box-shadow: 0 0 85px 20px rgba(0,0,0) inset;
   }
 `;
 

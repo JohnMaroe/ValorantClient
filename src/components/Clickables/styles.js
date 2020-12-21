@@ -45,6 +45,10 @@ export const Click = styled.div`
 
       font-size: 18px;
       cursor: pointer;
+
+      &:hover {
+        background-color: rgba(256,256,256,0.5);
+      }
     }
   }
 `;

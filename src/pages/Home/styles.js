@@ -1,40 +1,117 @@
 import styled from 'styled-components';
-import img from '../../assets/vlr-bg.png';
 
-export const Container = styled.div`
-  width: 100%;
-  min-width: 1000px;
-  height: 100vh;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #353a45;
-`;
+export const HomeStyle = styled.div`
+  position: absolute;
+  color: white;
 
-export const Main = styled.div`
-  width: 75%;
+  width: 80%;
+  min-width: 800px;
   height: 80%;
-
-  min-width: 700px;
   min-height: 700px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  header {
+    padding: 32px;
 
-  background: url(${img}) center no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  box-shadow: inset 100px 0 100px 20px rgba(0,0,0);
-  box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-  .img-shadow {
-    width: 100%;
-    height: 100%;
+      p {
+        color: rgba(200,200,200, 0.8);
+      }
+    }
+
+    h3 {
+      font-style: 'Poppins';
+      font-weight: 600;
+      font-size: 26px;
+
+      margin-bottom: 3px;
+      margin-right: 8px;
+    }
+
+    span {
+      font-size: 13px;
+      color: #d13639;
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        color: #bc252a;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 120px;
+      left: 39px;
+
+      width: 34px;
+      height: 34px;
+      background-color: purple;
+      text-align: center;
+      transform: rotate(45deg);
+    }
+  }
+
+  main {
+    position: absolute;
+    left: 16.5%;
+    top: 33%;
+    user-select: none;
+
+    h1 {
+      color: #eee;
+
+      font-size: 200px;
+      font-weight: 800;
+      cursor: pointer;
+
+      &:hover {
+        color: #bc252a;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      i {
+        color: #d13639;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    padding: 50px;
+    user-select: none;
     pointer-events: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 0 80px rgba(0,0,0) inset;
+
+    hr {
+    }
+
+    & :first-child {
+      width: 90px;
+      margin-right: 20px;
+      padding-right: 30px;
+      border-right: 1px solid #eee;
+    }
+
+    & :last-child {
+      width: 265px;
+      margin-left: 50px;
+    }
   }
 `;
