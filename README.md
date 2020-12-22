@@ -8,6 +8,8 @@ Motivated by the incredible amount of thought put into the beautiful design of t
 
 The recreation also has features like signing in, pressing play and closing the client window to reveal the "desktop" of the user.
 
+- Check it out 👉 https://valorant-client.vercel.app/
+
 ### Technologies used
 React ⚛️ <br />
 Node ⚓ <br />
