@@ -14,7 +14,6 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.div`
-  width: 75%;
   height: 700px;
 
   min-width: 1200px;
