@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const Click = styled.div`
+  position: relative;
+
   .icons {
     position: absolute;
-    right: 200px;
+    right: 0;
+    top: 0;
 
     display: flex;
 
@@ -35,8 +38,9 @@ export const Click = styled.div`
   .config {
     i {
       position: absolute;
-      bottom: 86px;
-      right: 240px;
+      bottom: 0;
+      right: 0;
+      margin: 45px;
 
       color: #eee;
       background-color: rgba(256,256,256,0.3);

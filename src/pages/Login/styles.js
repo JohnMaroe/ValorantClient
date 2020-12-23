@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const Main = styled.div`
   width: 75%;
-  height: 80%;
+  height: 700px;
 
   min-width: 1200px;
   min-height: 700px;
@@ -60,6 +60,7 @@ export const Form = styled.div`
     align-items: center;
     width: 100%;
     height: 50px;
+    position: relative;
 
     img {
       width: 38px;
@@ -81,8 +82,8 @@ export const Form = styled.div`
 
     div {
       position: absolute;
-      left: 518px;
-      top: 93px;
+      left: 255px;
+      top: 5px;
 
       transform: scale(0);
       background-color: #fbfbfb;
@@ -134,6 +135,10 @@ export const Form = styled.div`
       display: flex;
       flex-direction: column;
 
+      div {
+        position: relative;
+      }
+
       .input-box {
         position: relative;
         margin-bottom: 20px;
@@ -167,7 +172,8 @@ export const Form = styled.div`
       .input-text {
         position: absolute;
         margin: 17px;
-        left: 260px;
+        left: 0;
+        top: 0;
 
         font-size: 11px;
         font-weight: 800;
