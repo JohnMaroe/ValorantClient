@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import img from '../../assets/vlr-bg.png';
 
 export const Container = styled.div`
-  width: 100%;
-  min-width: 1000px;
+  width: 100vw;
+  min-width: 1240px;
   height: 100vh;
+  min-height: 720px;
   
   display: flex;
   align-items: center;
@@ -16,7 +17,7 @@ export const Main = styled.div`
   width: 75%;
   height: 80%;
 
-  min-width: 700px;
+  min-width: 1200px;
   min-height: 700px;
 
   display: flex;
