@@ -82,7 +82,7 @@ export const Form = styled.div`
 
     div {
       position: absolute;
-      left: 255px;
+      left: 285px;
       top: 5px;
 
       transform: scale(0);
