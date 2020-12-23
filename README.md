@@ -14,6 +14,7 @@ The recreation also has features like signing in, pressing play and closing the 
 React ⚛️ <br />
 Node ⚓ <br />
 React-router-dom 🚂 <br />
+Styled Components 💅🏻 <br />
 
 Made with ❤️ by <a href="https://www.linkedin.com/in/jo%C3%A3o-maroeli-dos-santos-645314196/" target="_blank"> João Maroeli </a>. <br />
 <br />
